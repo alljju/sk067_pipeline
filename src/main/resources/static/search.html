@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>검색 결과 - ParkHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    <a href="index.html" class="btn-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                    </a>
+                    <div>
+                        <h1 class="header-title" id="locationTitle">강남역 주차장</h1>
+                        <p class="header-subtitle" id="searchInfo"></p>
+                    </div>
+                </div>
+                <button class="btn btn-outline btn-small">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="21" x2="4" y2="14"></line>
+                        <line x1="4" y1="10" x2="4" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12" y2="3"></line>
+                        <line x1="20" y1="21" x2="20" y2="16"></line>
+                        <line x1="20" y1="12" x2="20" y2="3"></line>
+                        <line x1="1" y1="14" x2="7" y2="14"></line>
+                        <line x1="9" y1="8" x2="15" y2="8"></line>
+                        <line x1="17" y1="16" x2="23" y2="16"></line>
+                    </svg>
+                    필터
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="search-layout">
+            <div class="parking-list-section">
+                <div class="section-header">
+                    <h2 class="section-title" id="resultCount">6개의 주차장</h2>
+                </div>
+                <div id="parkingList" class="parking-list"></div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-container" id="mapContainer">
+                    <div class="map-placeholder">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                        </svg>
+                        <p>지도 영역</p>
+                    </div>
+                    <div id="mapMarkers" class="map-markers"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>
