@@ -1,4 +1,4 @@
-package com.skala.springbootsample.repo;
+package java.com.skala.springbootsample.repo;
 
 import com.skala.springbootsample.domain.ParkingLot;
 import org.springframework.data.jpa.repository.JpaRepository;

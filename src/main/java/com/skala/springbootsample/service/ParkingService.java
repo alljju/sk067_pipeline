@@ -1,4 +1,4 @@
-package com.skala.springbootsample.service;
+package java.com.skala.springbootsample.service;
 
 import com.skala.springbootsample.dto.ParkingRequestDto;
 import org.springframework.stereotype.Service;

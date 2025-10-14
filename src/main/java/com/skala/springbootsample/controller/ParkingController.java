@@ -1,4 +1,4 @@
-package com.skala.springbootsample.controllerr;
+package com.skala.springbootsample.controller;
 
 import com.skala.springbootsample.dto.ParkingRequestDto;
 import com.skala.springbootsample.service.ParkingService;
