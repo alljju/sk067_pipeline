@@ -3,6 +3,8 @@ package com.skala.springbootsample.repo;
 import com.skala.springbootsample.domain.ParkingLot;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+import java.util.List;  // List 클래스 임포트
+
 
 @Repository
 public interface ParkingRepository extends JpaRepository<ParkingLot, Long> {
